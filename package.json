@@ -1,0 +1,44 @@
+{
+  "name": "moneypennny-server",
+  "description": "Backend for the moneypenny bookkeeping service",
+  "main": "./src/app.coffee",
+  "version": "0.0.1",
+  "author": "Jakob Mattsson <jakob.mattsson@gmail.com> (jakobmattsson.se)",
+  "private": true,
+  "engines": {
+    "npm": "1.1.x",
+    "node": "0.8.x"
+  },
+  "dependencies": {
+    "manikin-mongodb": "0.10.5",
+    "nconf": "0.6.5",
+    "mongojs": "0.7.0",
+    "q": "0.8.10",
+    "rester": "0.8.0",
+    "async": "0.1.22",
+    "underscore": "1.4.2",
+    "jsonrpc-http-client-node": "0.1.0",
+    "locke-client-jsonrpc": "0.3.1",
+    "rester-tools": "0.6.2",
+    "coffee-script": "1.4.0",
+    "socket.io": "0.9.11",
+    "express": "3.0.1"
+  },
+  "devDependencies": {
+    "locke-api": "0.3.1",
+    "locke-store-mem": "0.3.1",
+    "request": "2.14.0",
+    "jscov": "0.4.1",
+    "mocha-term-cov-reporter": "0.1.0",
+    "chai": "1.5.0",
+    "mocha": "1.8.1",
+    "sinon": "1.6.0",
+    "sinon-chai": "2.3.1",
+    "nodemon": "0.7.2"
+  },
+  "scripts": {
+    "test": "mocha -t 5000 -R list --compilers coffee:coffee-script -b test/*.coffee",
+    "deploy": "git push heroku master",
+    "start": "coffee ./src/start.coffee"
+  }
+}

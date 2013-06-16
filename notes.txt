@@ -1,0 +1,33 @@
+API
+====
+
+Konto
+-----
+Namn
+Typ (tillgång, skuld, intäkt, kostnad)
+Position
+HasMany Tags
+
+s
+
+Transaktion
+-----------
+Datum
+Beskrivning
+Position
+
+
+
+Entry
+-----
+HasOne Konto
+HasOne Transaction
+Värde
+Position
+
+
+
+Tag
+---
+Namn
+Faktor
