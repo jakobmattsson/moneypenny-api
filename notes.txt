@@ -31,3 +31,15 @@ Tag
 ---
 Namn
 Faktor
+
+
+
+
+Balansrapport (ett urval av taggar, presenterade som tag-namn och summan över alla konton med de taggarna)
+Momsrapport (samma)
+Resultatrapport (samma)
+
+Verifikationslista (alla entries, sorterade efter "transaction")
+Huvudbok (alla entries, sorterade efter "konto")
+Kontoplan
+Ingående balans
